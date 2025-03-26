@@ -316,7 +316,7 @@ body{
 
 @media (max-width: 768px) { /* Cible les écrans de moins de 768px (tablettes et mobiles) */
 	.logo {
-	  width: 15%; /* Nouvelle taille pour mobile */
+	  width: 20%; /* Nouvelle taille pour mobile */
 	}
   }
 
