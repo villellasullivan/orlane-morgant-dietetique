@@ -313,6 +313,13 @@ body{
 .header .logo img {
 	max-width: 26%;
 }
+
+@media (max-width: 768px) { /* Cible les écrans de moins de 768px (tablettes et mobiles) */
+	.logo {
+	  width: 10%; /* Nouvelle taille pour mobile */
+	}
+  }
+
 .header .navbar {
 	background: none;
 	box-shadow: none;
