@@ -23,22 +23,29 @@
         <link rel="canonical" href="https://lille-dieteticienne.fr/" />
         <link rel="preload" href="https://ik.imagekit.io/u1wpcoc2g/slider2.webp" as="image" type="image/webp">
         <link rel="preload" href="https://ik.imagekit.io/u1wpcoc2g/slider.webp" as="image" type="image/webp">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/bootstrap.min.css" />
-        <!-- Nice Select CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/icofont.css?updatedAt=1743332228093" media="print" onload="this.media='all';" />
-        <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/font-awesome.min.css?updatedAt=1743332228113" media="print" onload="this.media='all';" />
-        <!-- Slicknav -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/slicknav.min.css" media="print" onload="this.media='all';" />
-        <!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/owl-carousel.css"  />
-        <!-- Animate CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/animate.min.css" media="print" onload="this.media='all';" />
-        <!-- Medipro CSS -->
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/normalize.css" media="print" onload="this.media='all';" />
-        <link rel="preload" href="https://ik.imagekit.io/u1wpcoc2g/style.css?updatedAt=1743360476865" type="text/css" as="style" onload="this.onload = null; this.rel = 'stylesheet';"/>
-        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/responsive.css" media="print" onload="this.media='all';"/>
+
+
+            <!-- Chargement asynchrone du CSS non-critique -->
+        <link rel="preload" href="https://ik.imagekit.io/u1wpcoc2g/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/bootstrap.min.css"></noscript>
+        
+        <link rel="preload" href="https://ik.imagekit.io/u1wpcoc2g/owl-carousel.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/owl-carousel.css"></noscript>
+        
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/icofont.css?updatedAt=1743332228093" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/font-awesome.min.css?updatedAt=1743332228113" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/slicknav.min.css" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/animate.min.css" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/normalize.css" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/style.css?updatedAt=1743360476865" media="print" onload="this.media='all';">
+        <link rel="stylesheet" href="https://ik.imagekit.io/u1wpcoc2g/responsive.css" media="print" onload="this.media='all';">
+        
+        <!-- Chargeur de CSS asynchrone -->
+        <script>
+        /* Petit script pour charger CSS de manière asynchrone */
+        !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+        </script>
+
       <!-- Schema.org structured data - Enrichi -->
         <script type="application/ld+json">
             {
@@ -245,7 +252,7 @@
                                     <div class="single-content">
                                         <span>Conseils & Bien-être</span>
                                         <h4>🥗 Mieux manger</h4>
-                                        <p>Découvrez des conseils simples et efficaces.</p>
+                                        <p>Découvrez des conseils simples et efficaces.<br><br></p>
                                         <a href="https://www.doctolib.fr/dieteticien/lille/orlane-morgant/">Me faire accompagner<i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
@@ -640,6 +647,7 @@
         <!-- Bootstrap JS -->
         <script  src="https://ik.imagekit.io/u1wpcoc2g/popper.min.js"></script>
         <script  src="https://ik.imagekit.io/u1wpcoc2g/bootstrap.min.js"></script>
+
         <!-- Main JS -->
         <script src="https://ik.imagekit.io/u1wpcoc2g/main.js"></script>
         <script>
