@@ -645,19 +645,18 @@
         <script src="https://ik.imagekit.io/u1wpcoc2g/main.js"></script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                let slider = document.querySelector(".single-slider");
-                if (slider) {
-                    slider.style.backgroundImage = "url('https://ik.imagekit.io/u1wpcoc2g/slider2.webp')";
+                if (window.innerWidth > 768) { // Change 768 selon ton besoin
+                    let slider1 = document.querySelector(".single-slider");
+                    if (slider1) {
+                        slider1.style.backgroundImage = "url('https://ik.imagekit.io/u1wpcoc2g/slider2.webp')";
+                    }
+        
+                    let slider2 = document.querySelector(".single-slider-2");
+                    if (slider2) {
+                        slider2.style.backgroundImage = "url('https://ik.imagekit.io/u1wpcoc2g/slider.webp')";
+                    }
                 }
             });
-        </script>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        let slider = document.querySelector(".single-slider-2");
-                        if (slider) {
-                            slider.style.backgroundImage = "url('https://ik.imagekit.io/u1wpcoc2g/slider.webp')";
-                        }
-                    });
-        </script>
+        </script>        
     </body>
 </html>
