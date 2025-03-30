@@ -1019,7 +1019,7 @@ body{
 .why-choose .choose-right{
 	height:100%;
 	width:100%;
-	background-image:url('img/cabinet-dieteticienne-lille.webp');
+	background-image:url('https://ik.imagekit.io/u1wpcoc2g/cabinet-dieteticienne-lille.webp');
 	background-size:cover;
 	background-position:center;
 	background-repeat:no-repeat;
@@ -1079,7 +1079,7 @@ body{
 	Start Call to action CSS
 =================================*/
 .call-action{
-	background-image:url('img/call-bg.jpg');
+	background-image:url('https://ik.imagekit.io/u1wpcoc2g/call-bg.jpg');
 	background-size:cover;
 	background-position:center;
 	position:relative;
