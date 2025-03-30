@@ -9,6 +9,7 @@
         <!-- Title -->
         <title>Diététicienne à Lille – Consultations Nutrition & Bien-être</title>
         <meta name="description" content="Diététicienne à Lille et Marcq-en-Barœul, je vous accompagne avec un suivi personnalisé en cabinet ou en visio pour une alimentation équilibrée et durable." />
+        <meta name="keywords" content="diététicienne Lille, nutritionniste Marcq-en-Barœul, perte de poids, troubles digestifs, alimentation équilibrée, rééquilibrage alimentaire, consultation nutrition visio" />
         <meta property="og:title" content="Diététicienne à Lille – Consultations Nutrition & Bien-être" />
         <meta property="og:description" content="Diététicienne à Lille et Marcq-en-Barœul, je vous accompagne avec un suivi personnalisé en cabinet ou en visio pour une alimentation équilibrée et durable." />
         <meta property="og:image" content="https://lille-dieteticienne.fr/img/call-bg.jpg" />
@@ -44,26 +45,70 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="css/responsive.css" />
+      <!-- Schema.org structured data - Enrichi -->
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
                 "@type": "LocalBusiness",
-                "name": "Orlane Morgant - Diététicienne",
+                "@id": "https://lille-dieteticienne.fr",
+                "name": "Orlane Morgant - Diététicienne Nutritionniste",
                 "image": "https://lille-dieteticienne.fr/img/logo.jpg", 
-                "description": "Consultations de nutrition et bien-être à Marcq-en-Barœul, approche personnalisée et conseils adaptés à vos besoins.",
+                "description": "Cabinet de diététique et nutrition à Marcq-en-Barœul proposant des consultations personnalisées pour perte de poids, troubles digestifs et alimentation équilibrée.",
+                "priceRange": "€€",
                 "address": {
                     "@type": "PostalAddress",
                     "streetAddress": "57 Bis Av. de Verdun",
                     "addressLocality": "Marcq-en-Barœul",
+                    "addressRegion": "Hauts-de-France",
                     "postalCode": "59700",
                     "addressCountry": "FR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "50.6751",
+                    "longitude": "3.0865"
                 },
                 "telephone": "+33 6 31 41 49 69",
                 "email": "contact@orlane-morgant.fr",
                 "url": "https://lille-dieteticienne.fr/",
                 "sameAs": [
-                    "https://www.instagram.com/orlaneladiet"
-                ]
+                    "https://www.instagram.com/orlaneladiet",
+                    "https://g.co/kgs/RA2Pdzs"
+                ],
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Monday"],
+                        "opens": "09:00",
+                        "closes": "18:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+                        "opens": "09:00",
+                        "closes": "20:00"
+                    }
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Services de diététique et nutrition",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "name": "Première consultation",
+                            "description": "Bilan nutritionnel complet et mise en place d'objectifs personnalisés",
+                            "price": "60.00",
+                            "priceCurrency": "EUR"
+                        },
+                        {
+                            "@type": "Offer",
+                            "name": "Consultation de suivi",
+                            "description": "Suivi de progression et ajustement des objectifs nutritionnels",
+                            "price": "50.00",
+                            "priceCurrency": "EUR"
+                        }
+                    ]
+                }
             }
         </script>
     </head>
