@@ -150,15 +150,7 @@ Version:	1.1
 				},
 			}
 		});
-		
-		/*=====================================
-			Counter Up JS
-		======================================*/
-		$('.counter').counterUp({
-			delay:20,
-			time:2000
-		});
-		
+
 		/*===============================
 			Clients Slider JS
 		=================================*/ 
@@ -221,19 +213,6 @@ Version:	1.1
 			j.preventDefault();
 		});
 		
-		/*====================================
-			Nice Select JS
-		======================================*/ 	
-		$('select').niceSelect();
-		
-		/*=====================================
-			Date Picker JS
-		======================================*/ 
-		$( function() {
-			$( "#datepicker" ).datepicker();
-		} );
-		
-		
 		
 		/*===============================
 			Checkbox JS
@@ -256,50 +235,7 @@ Version:	1.1
 			$('.sidebar-menu').removeClass('active');
 		});
 		
-		/*=====================
-			Video Popup JS
-		=======================*/ 
-		$('.video-popup').magnificPopup({
-			type: 'video',	
-		});
-		
-		/*================
-			Wow JS
-		==================*/		
-		var window_width = $(window).width();   
-			if(window_width > 767){
-            new WOW().init();
-		}
 	
-		/*===================
-			Scroll Up JS
-		=====================*/
-		$.scrollUp({
-			scrollText: '<span><i class="fa fa-angle-up"></i></span>',
-			easingType: 'easeInOutExpo',
-			scrollSpeed: 900,
-			animation: 'fade'
-		}); 
-
-		/*=======================
-			Animate Scroll JS
-		=========================*/
-		$('.scroll').on("click", function (e) {
-			var anchor = $(this);
-				$('html, body').stop().animate({
-					scrollTop: $(anchor.attr('href')).offset().top - 100
-				}, 1000);
-			e.preventDefault();
-		});
-		
-		/*=======================
-			Stellar JS
-		=========================*/
-		$.stellar({
-		  horizontalOffset: 0,
-		  verticalOffset: 0
-		});
-
 		/*====================
 			Google Maps JS
 		======================*/
